@@ -1,0 +1,26 @@
+scooter_id,zone,battery,health_score,trips_today,age_months
+S001,Indiranagar,91,92,6,8
+S002,Indiranagar,76,88,8,12
+S003,Indiranagar,64,81,10,15
+S004,Indiranagar,43,95,5,6
+S005,Indiranagar,28,72,12,22
+S006,Benniganahalli,87,90,7,10
+S007,Benniganahalli,69,85,9,14
+S008,Benniganahalli,52,79,11,18
+S009,Benniganahalli,31,91,6,7
+S010,Benniganahalli,24,68,13,26
+S011,Krishnarajapura,94,96,5,5
+S012,Krishnarajapura,81,89,7,11
+S013,Krishnarajapura,58,84,9,13
+S014,Krishnarajapura,39,77,12,19
+S015,Krishnarajapura,22,65,14,29
+S016,Mahatma Gandhi Road,90,94,8,7
+S017,Mahatma Gandhi Road,73,87,7,10
+S018,Mahatma Gandhi Road,61,82,10,16
+S019,Mahatma Gandhi Road,35,74,13,21
+S020,Mahatma Gandhi Road,18,62,15,31
+S021,"Nadaprabhu Kempegowda Station, Majestic",96,97,6,4
+S022,"Nadaprabhu Kempegowda Station, Majestic",84,91,8,8
+S023,"Nadaprabhu Kempegowda Station, Majestic",71,86,9,12
+S024,"Nadaprabhu Kempegowda Station, Majestic",45,78,11,18
+S025,"Nadaprabhu Kempegowda Station, Majestic",26,69,14,25

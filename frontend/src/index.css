@@ -1,0 +1,413 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #30270d;
+  background: #fffaf0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 75% -10%,
+      rgba(255, 214, 73, 0.20),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(255, 237, 166, 0.18),
+      transparent 28%
+    ),
+    #fffaf0;
+
+  color: #30270d;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #f5c52e;
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fffaf0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e7cc72;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d8aa16;
+}
+
+
+/* ============================================================
+   GLOBAL SURFACES
+   ============================================================ */
+
+.fleetmind-surface {
+  background: #ffffff;
+  border: 1px solid #ead9a1;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 30px rgba(139, 105, 0, 0.06),
+    0 2px 7px rgba(139, 105, 0, 0.04);
+}
+
+.fleetmind-surface:hover {
+  border-color: #dfc35f;
+  box-shadow:
+    0 14px 38px rgba(139, 105, 0, 0.09),
+    0 3px 9px rgba(139, 105, 0, 0.05);
+}
+
+.fleetmind-soft {
+  background:
+    linear-gradient(
+      145deg,
+      #fffdf7,
+      #fff7d9
+    );
+
+  border: 1px solid #ead9a1;
+  border-radius: 20px;
+}
+
+.fleetmind-gold {
+  background:
+    linear-gradient(
+      135deg,
+      #f2b900,
+      #ffd34f
+    );
+
+  color: #ffffff;
+}
+
+.fleetmind-gold-soft {
+  background:
+    linear-gradient(
+      135deg,
+      #fff9df,
+      #fff0b7
+    );
+
+  border: 1px solid #ead08a;
+}
+
+.fleetmind-text {
+  color: #30270d;
+}
+
+.fleetmind-muted {
+  color: #806f3c;
+}
+
+.fleetmind-border {
+  border-color: #ead9a1;
+}
+
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+/*
+  Overrides the old dark sidebar without requiring changes
+  to its functionality.
+*/
+
+aside {
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf7 0%,
+      #fff7dd 100%
+    ) !important;
+
+  border-color: #ead9a1 !important;
+
+  color: #4d401d !important;
+
+  box-shadow:
+    8px 0 30px rgba(139, 105, 0, 0.05);
+}
+
+aside a {
+  color: #806f3c !important;
+  border-radius: 12px !important;
+}
+
+aside a:hover {
+  color: #30270d !important;
+  background: #fff0b7 !important;
+}
+
+aside a[aria-current="page"],
+aside a.active {
+  color: #30270d !important;
+  background:
+    linear-gradient(
+      90deg,
+      #ffe59a,
+      #fff4ca
+    ) !important;
+
+  box-shadow:
+    inset 3px 0 0 #eeb500;
+}
+
+aside svg {
+  color: #b58b11;
+}
+
+aside .text-white,
+aside .text-gray-100,
+aside .text-gray-200,
+aside .text-gray-300 {
+  color: #30270d !important;
+}
+
+aside .text-gray-400,
+aside .text-gray-500,
+aside .text-gray-600 {
+  color: #806f3c !important;
+}
+
+
+/* ============================================================
+   LEAFLET MAP
+   ============================================================ */
+
+.leaflet-container {
+  background: #fff8dc !important;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+
+  border-radius: 18px;
+}
+
+.leaflet-control-zoom {
+  overflow: hidden;
+
+  border: 1px solid #e4cd83 !important;
+
+  border-radius: 10px !important;
+
+  box-shadow:
+    0 8px 25px rgba(112, 84, 0, 0.12) !important;
+}
+
+.leaflet-control-zoom a {
+  background: #ffffff !important;
+  color: #8b6b13 !important;
+
+  border-bottom-color: #ead9a1 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #fff3c4 !important;
+  color: #c18c00 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+
+  color: #30270d !important;
+
+  border: 1px solid #ead9a1 !important;
+
+  border-radius: 14px !important;
+
+  box-shadow:
+    0 12px 35px rgba(112, 84, 0, 0.13) !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+.leaflet-popup-content {
+  color: #30270d !important;
+}
+
+
+/* ============================================================
+   CHARTS
+   ============================================================ */
+
+.recharts-wrapper {
+  background: transparent !important;
+}
+
+.recharts-cartesian-grid line {
+  stroke: #eee2bb !important;
+}
+
+.recharts-text {
+  fill: #806f3c !important;
+}
+
+.recharts-default-tooltip {
+  background: #ffffff !important;
+
+  border: 1px solid #e4cd83 !important;
+
+  border-radius: 12px !important;
+
+  box-shadow:
+    0 12px 30px rgba(112, 84, 0, 0.12) !important;
+}
+
+.recharts-tooltip-label {
+  color: #4d401d !important;
+}
+
+.recharts-legend-item-text {
+  color: #806f3c !important;
+}
+
+
+/* ============================================================
+   OLD DARK TAILWIND OVERRIDES
+   ============================================================ */
+
+/*
+  These make existing dark Analytics/other components visually
+  follow the new yellow-white system without touching their
+  functionality.
+*/
+
+.bg-\[\#07090a\],
+.bg-\[\#080a0c\] {
+  background: #fffaf0 !important;
+}
+
+.bg-gray-900,
+.bg-gray-950 {
+  background: #fffaf0 !important;
+}
+
+.bg-white\/5,
+.bg-white\/10,
+.bg-white\/\[0\.015\],
+.bg-white\/\[0\.02\] {
+  background: rgba(255, 255, 255, 0.82) !important;
+}
+
+.border-white\/10,
+.border-white\/15,
+.border-white\/20 {
+  border-color: #ead9a1 !important;
+}
+
+.text-gray-100,
+.text-gray-200,
+.text-gray-300 {
+  color: #30270d !important;
+}
+
+.text-gray-400,
+.text-gray-500 {
+  color: #806f3c !important;
+}
+
+.text-gray-600,
+.text-gray-700 {
+  color: #a28d51 !important;
+}
+
+
+/* ============================================================
+   HOVER / TRANSITIONS
+   ============================================================ */
+
+a,
+button,
+.fleetmind-surface,
+.fleetmind-soft {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+
+/* ============================================================
+   INPUTS
+   ============================================================ */
+
+input::placeholder,
+textarea::placeholder {
+  color: #b9a873;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+
+/* ============================================================
+   GOLD GLOW
+   ============================================================ */
+
+.fleetmind-glow {
+  box-shadow:
+    0 0 0 1px rgba(245, 183, 0, 0.10),
+    0 12px 35px rgba(245, 183, 0, 0.10);
+}
