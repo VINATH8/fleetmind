@@ -11,7 +11,7 @@
 
 // // // import FleetMap from "../components/FleetMap";
 
-// // // const API = "http://127.0.0.1:8000";
+// // // const API = "/api";
 
 // // // export default function Analytics() {
 
@@ -781,7 +781,7 @@
 
 // // import FleetMap from "../components/FleetMap";
 
-// // const API = "http://127.0.0.1:8000";
+// // const API = "/api";
 
 // // export default function Analytics() {
 // //   const [data, setData] = useState(null);
@@ -1694,7 +1694,7 @@
 
 // import FleetMap from "../components/FleetMap";
 
-// const API = "http://127.0.0.1:8000";
+// const API = "/api";
 
 // export default function Analytics() {
 //   const [data, setData] = useState(null);
@@ -2701,7 +2701,7 @@ import {
 
 import FleetMap from "../components/FleetMap";
 
-const API = "http://127.0.0.1:8000";
+const API = "/api";
 
 export default function Analytics() {
   const [data, setData] = useState(null);

@@ -8,7 +8,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 
-const API = "http://127.0.0.1:8000/api/operations";
+const API = "/api/api/operations";
 
 export default function Operations() {
   const [data, setData] = useState(null);

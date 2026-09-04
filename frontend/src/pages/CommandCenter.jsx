@@ -11,7 +11,7 @@
 // //   ChevronRight,
 // // } from "lucide-react";
 
-// // const API = "http://127.0.0.1:8000";
+// // const API = "/api";
 
 // // export default function CommandCenter() {
 
@@ -1456,7 +1456,7 @@
 //   ChevronRight,
 // } from "lucide-react";
 
-// const API = "http://127.0.0.1:8000";
+// const API = "/api";
 
 // export default function CommandCenter() {
 
@@ -2891,7 +2891,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-const API = "http://127.0.0.1:8000";
+const API = "/api";
 
 export default function CommandCenter() {
   const [question, setQuestion] = useState("");
